@@ -1,0 +1,37 @@
+
+
+body {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1000px;
+
+    font-family: sans-serif;
+
+    background: #f8ffff;
+    color: #111;
+
+    line-height: 1.5;
+}
+
+a {
+    color: #0080ff;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    width: fit-content;
+}
+
+#delimiter {
+    max-width: 60px;
+}
+
+textarea {
+    width: 100%;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>CSV to markdown</title>
+</head>
+<body>
+    <h1>CSV to markdown table generator</h1>
+    <div class="inputs">
+        <label for="csv">File</label>
+        <input type="file" id="csv" accept=".csv, .txt">
+        <label for="delimiter">Delimiter</label>
+        <input type="text" id="delimiter" value=",">
+
+        <label for="align-columns">Align columns</label>
+        <input type="checkbox" id="align-columns">
+
+        <input type="button" value="Convert!" onclick="convert()">
+    </div>
+
+    <br>
+
+    <input type="button" value="Copy" onclick="copy()">
+    <textarea name="result" id="result" rows="10"></textarea>
+
+    <script src="csv2md-table.js"></script>
+</body>
+</html>
